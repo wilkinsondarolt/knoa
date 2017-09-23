@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Waves
+  m_Controller: {fileID: 9100000, guid: 696d3adf186dab644a4ac8c394ed7487, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b5559cadb35261f499f0e321a242cd30, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 72a1252e9f5aa7748ac6ce0421f647fd, type: 2}
