@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212364565336357796}
   - component: {fileID: 114269127177188880}
   - component: {fileID: 61881796282492322}
+  - component: {fileID: 114975054471562380}
   m_Layer: 0
   m_Name: Iuna
   m_TagString: Player
@@ -35,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1096066465262996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.67, y: -4.61, z: 0}
+  m_LocalRotation: {x: -0.3090171, y: -0, z: 0, w: 0.95105654}
+  m_LocalPosition: {x: -6.67, y: -6.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -36, y: 0, z: 0}
 --- !u!61 &61881796282492322
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -57,7 +58,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 4.22, y: 4.01}
     newSize: {x: 3.72, y: 1.04}
     adaptiveTilingThreshold: 0.5
@@ -79,6 +80,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 4
+--- !u!114 &114975054471562380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1096066465262996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991a940370ee0e24e8e8e3e452729a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
+  prefab: {fileID: 1954280002242704, guid: 0c0fee449ac4be64fb4fc198ba9288a0, type: 2}
+  poolSize: 5
 --- !u!212 &212364565336357796
 SpriteRenderer:
   m_ObjectHideFlags: 1
