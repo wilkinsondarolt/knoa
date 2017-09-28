@@ -12,9 +12,10 @@ public class Pause : MonoBehaviour {
 	
 	void Update ()
     {
-		if (Input.GetKeyDown (KeyCode.Escape))
+		if (Input.GetKeyDown (KeyCode.Escape)) {
 			paused = !paused;
-
+			AudioListener.pause = !AudioListener.pause;
+		}
 		if (paused)
 			Time.timeScale = 0;
 		else if (!paused) 
@@ -24,6 +25,7 @@ public class Pause : MonoBehaviour {
 	public void PauseGame()
     {
         paused = !paused;
+		AudioListener.pause = !AudioListener.pause;
 
 		if (paused)
 			Time.timeScale = 0;

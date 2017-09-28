@@ -51,13 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mute.cs" />
-     <Compile Include="Assets\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\Arrow\Arrow.cs" />
      <Compile Include="Assets\Scripts\Iara\IaraController.cs" />
      <Compile Include="Assets\Scripts\Iuna\IunaController.cs" />
+     <Compile Include="Assets\Scripts\Menu\Audio.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu\Mute.cs" />
+     <Compile Include="Assets\Scripts\Menu\Pause.cs" />
      <Compile Include="Assets\Scripts\Utils\Fading.cs" />
+     <Compile Include="Assets\Scripts\Utils\GameAudios.cs" />
      <Compile Include="Assets\Scripts\Utils\MovingObject.cs" />
+     <Compile Include="Assets\Scripts\Utils\PoolManager.cs" />
      <Compile Include="Assets\Scripts\Utils\Scenes.cs" />
      <Compile Include="Assets\Scripts\Utils\SingletonObject.cs" />
  <Reference Include="Facebook.Unity.Settings">
