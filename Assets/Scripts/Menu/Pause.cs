@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine; 
 
+
 public class Pause : MonoBehaviour {
 	public bool paused;
+
 
 	void Start ()
     {
 		paused = false;
+			
 	}
 	
 	void Update ()
@@ -21,6 +24,7 @@ public class Pause : MonoBehaviour {
 		else if (!paused) 
 			Time.timeScale = 1;	
 	}
+
 
 	public void PauseGame()
     {
