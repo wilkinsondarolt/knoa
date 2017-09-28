@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Mute.cs" />
+     <Compile Include="Assets\PauseScript.cs" />
      <Compile Include="Assets\Scripts\Iara\IaraController.cs" />
      <Compile Include="Assets\Scripts\Iuna\IunaController.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu.cs" />
@@ -58,6 +60,9 @@
      <Compile Include="Assets\Scripts\Utils\MovingObject.cs" />
      <Compile Include="Assets\Scripts\Utils\Scenes.cs" />
      <Compile Include="Assets\Scripts\Utils\SingletonObject.cs" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>C:/Users/gabriel/Documents/GitHub/knoa/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -78,9 +83,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/gabriel/Documents/GitHub/knoa/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
