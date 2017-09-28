@@ -6,11 +6,15 @@ public class IunaController : MovingObject
 {
     private Audio audioControl;
     private PoolManager arrowPool;
+	public int curHealth;
+	public int maxHealth = 100;
 
     private void Start()
     {
         audioControl = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<Audio>();
         arrowPool = GetComponent<PoolManager>();
+
+		curHealth = maxHealth;
     }
 
 
@@ -29,4 +33,10 @@ public class IunaController : MovingObject
     {
         // Do the attack animation and create a projectile
     }
+
+	void Die()
+
+	{
+
+	}
 }
