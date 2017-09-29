@@ -62,8 +62,10 @@
      <Compile Include="Assets\Scripts\Menu\Pause.cs" />
      <Compile Include="Assets\Scripts\Utils\Fading.cs" />
      <Compile Include="Assets\Scripts\Utils\GameAudios.cs" />
+     <Compile Include="Assets\Scripts\Utils\LivingObject.cs" />
      <Compile Include="Assets\Scripts\Utils\MovingObject.cs" />
      <Compile Include="Assets\Scripts\Utils\PoolManager.cs" />
+     <Compile Include="Assets\Scripts\Utils\ProjectileObject.cs" />
      <Compile Include="Assets\Scripts\Utils\Scenes.cs" />
      <Compile Include="Assets\Scripts\Utils\SingletonObject.cs" />
  <Reference Include="UnityEngine.UI">
