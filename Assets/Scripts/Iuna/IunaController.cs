@@ -2,41 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IunaController : MovingObject
+public class IunaController : LivingObject
 {
+    private Pause pauseControl;
     private Audio audioControl;
     private PoolManager arrowPool;
-	public int curHealth;
-	public int maxHealth = 100;
+    private bool CanShoot;
+    private float CooldownTime = 1.0f;
 
-    private void Start()
+    protected override void Start()
     {
-        audioControl = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<Audio>();
+        base.Start();
+        GameObject GameController = GameObject.FindGameObjectWithTag("GameController");
+        audioControl = GameController.GetComponent<Audio>();
+        pauseControl = GameController.GetComponent<Pause>();
         arrowPool = GetComponent<PoolManager>();
-
 		curHealth = maxHealth;
+        CanShoot = true;
     }
 
-
-    void Update ()
+    protected override void Update ()
     {
-        StartCoroutine(Move(Input.GetAxisRaw("Horizontal") * Velocity * Time.deltaTime, Input.GetAxisRaw("Vertical") * Velocity * Time.deltaTime));
-
-        if (Input.GetButtonDown("Fire1"))
+        base.Update();
+        if (!pauseControl.Paused)
         {
-            arrowPool.ReuseObject(transform.position, Quaternion.identity);
-            audioControl.PlayArrow();             
-        }
+            StartCoroutine(Move(Input.GetAxisRaw("Horizontal") * Velocity * Time.deltaTime, Input.GetAxisRaw("Vertical") * Velocity * Time.deltaTime));
+
+            if (Input.GetButtonDown("Fire1") && CanShoot)            
+                Attack();
+        }        
     }
 
-    void Attack()
+    private void Attack()
     {
-        // Do the attack animation and create a projectile
+        CanShoot = false;
+        arrowPool.ReuseObject(transform.localPosition, Quaternion.Euler(-36f, 0f, 45f));
+        audioControl.PlayArrow();
+        Invoke("ActivateShoot", CooldownTime);
     }
 
-	void Die()
-
-	{
-
-	}
+    private void ActivateShoot()
+    {
+        CanShoot = true;
+    }
 }

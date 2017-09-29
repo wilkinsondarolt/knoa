@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Mute : MonoBehaviour {
-	public bool muted;
+	public bool Muted;
 
 	public void MuteGame()
     {
 		AudioListener.pause = !AudioListener.pause;
-        muted = AudioListener.pause;
+        Muted = AudioListener.pause;
 	}
 }

@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4258972306787542}
   - component: {fileID: 212441640347703732}
   - component: {fileID: 114746470622155934}
+  - component: {fileID: 61987496851690818}
   m_Layer: 0
   m_Name: Arrow
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,13 +35,38 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954280002242704}
-  m_LocalRotation: {x: -0.28593066, y: 0.117223695, z: 0.36361596, w: 0.8787979}
-  m_LocalPosition: {x: -4.65, y: -3.98, z: -2.1}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.28, y: -6.710446, z: -3.192131}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -36.001003, y: -0.135, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61987496851690818
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954280002242704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.9, y: 1.65}
+    newSize: {x: 10.73, y: 2.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.9, y: 1.65}
+  m_EdgeRadius: 0
 --- !u!114 &114746470622155934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffcc62ab889f1b94db40430eff85401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 5
+  Velocity: 10
 --- !u!212 &212441640347703732
 SpriteRenderer:
   m_ObjectHideFlags: 1
