@@ -31,8 +31,12 @@ public class Cutscene : MonoBehaviour
     {
         CutsceneScene sceneToPlay = Config[CurrentScene];
 
-        //audioControl.Stop();
-        //audioControl.clip = sceneToPlay.Voice;
+        if (sceneToPlay.Voice)
+        {
+            audioControl.Stop();
+            audioControl.clip = sceneToPlay.Voice;
+            audioControl.Play();
+        }        
 
         imageRenderer.sprite = sceneToPlay.CutsceneImage;
         CurrentScene++;

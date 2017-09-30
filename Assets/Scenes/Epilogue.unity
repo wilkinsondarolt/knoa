@@ -444,7 +444,7 @@ MonoBehaviour:
   - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 23f5c37506741e84bb82889eee664f6b, type: 3}
     Duration: 1
-  SceneToLoad: {fileID: 102900000, guid: a29c3c4e52c7e854e857d0912cf64cd8, type: 3}
+  SceneToLoad: {fileID: 102900000, guid: 83fa35c436b25e5468a5ef1ac7912b37, type: 3}
 --- !u!82 &1425955036
 AudioSource:
   m_ObjectHideFlags: 0

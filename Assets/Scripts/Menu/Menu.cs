@@ -2,24 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : SingletonObject {
-    private Fading fadeControl;
-
-    private void Start()
+public class Menu : SingletonObject
+{
+    void Update ()
     {
-        fadeControl = this.GetComponent<Fading>();
-    }
-
-    void Update () {
         if (Input.GetKey(KeyCode.Space)){
-            StartCoroutine(ChangeLevel("Main"));            
+            Scenes.LoadScene("Prologue");
         }		
 	}
-
-    IEnumerator ChangeLevel(string SceneName)
-    {
-        fadeControl.BeginFade(1);
-        yield return new WaitForSeconds(fadeControl.fadeSpeed);
-        Scenes.LoadScene("Main");
-    }
 }

@@ -435,15 +435,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Config:
-  - Voice: {fileID: 0}
+  - Voice: {fileID: 8300000, guid: 99f5ccb569501384bad1c6ef57100ce8, type: 3}
     CutsceneImage: {fileID: 21300000, guid: fcea18db47b0a7647a38c6b3c76ab7ec, type: 3}
-    Duration: 1
+    Duration: 6
   - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 38c170fbf7ad08e4488bbc6f1ed4eaaf, type: 3}
-    Duration: 1
-  - Voice: {fileID: 0}
+    Duration: 1.5
+  - Voice: {fileID: 8300000, guid: 5e4e6031ee984424db1b53977ef2e942, type: 3}
     CutsceneImage: {fileID: 21300000, guid: 4a9e97bdad0f295468720d087d9e88f0, type: 3}
-    Duration: 1
+    Duration: 10
   - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 9b1358584bdccaa478eb079676715caf, type: 3}
     Duration: 1
