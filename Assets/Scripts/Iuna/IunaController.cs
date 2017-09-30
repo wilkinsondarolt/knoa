@@ -8,7 +8,7 @@ public class IunaController : LivingObject
     private Audio audioControl;
     private PoolManager arrowPool;
     private bool CanShoot;
-    private float CooldownTime = 1.0f;
+    public float WeaponCooldownTime = 1.0f;
 
     protected override void Start()
     {
@@ -20,7 +20,7 @@ public class IunaController : LivingObject
 		curHealth = maxHealth;
         CanShoot = true;
     }
-
+    
     protected override void Update ()
     {
         base.Update();
@@ -28,17 +28,24 @@ public class IunaController : LivingObject
         {
             StartCoroutine(Move(Input.GetAxisRaw("Horizontal") * Velocity * Time.deltaTime, Input.GetAxisRaw("Vertical") * Velocity * Time.deltaTime));
 
-            if (Input.GetButtonDown("Fire1") && CanShoot)            
-                Attack();
+            if (Input.GetButton("Fire1") && CanShoot)
+            {
+                CanShoot = false;
+                AnimControl.SetTrigger("Attack");
+                Invoke("Attack", 1.0f);
+            }                      
         }        
     }
 
     private void Attack()
     {
-        CanShoot = false;
-        arrowPool.ReuseObject(transform.localPosition, Quaternion.Euler(-36f, 0f, 45f));
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * 10f);
+        float angle = AngleBetweenPoints(mouseWorldPosition, transform.position);
+
+        
+        arrowPool.ReuseObject(transform.localPosition, Quaternion.Euler(-36f, 0f, angle));
         audioControl.PlayArrow();
-        Invoke("ActivateShoot", CooldownTime);
+        Invoke("ActivateShoot", WeaponCooldownTime);
     }
 
     private void ActivateShoot()

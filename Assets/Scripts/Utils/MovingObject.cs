@@ -26,4 +26,9 @@ public class MovingObject : MonoBehaviour
         this.transform.Translate(moveOnX, MoveOnY, 0f);
         yield return null;
     }
+
+    protected float AngleBetweenPoints(Vector2 positionA, Vector2 positionB)
+    {
+        return Mathf.Atan2(positionA.y - positionB.y, positionA.x - positionB.x) * Mathf.Rad2Deg;
+    }
 }

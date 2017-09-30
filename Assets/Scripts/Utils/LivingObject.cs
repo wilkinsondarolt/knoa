@@ -6,9 +6,11 @@ public class LivingObject : MovingObject
 {
     public int curHealth;
     public int maxHealth = 100;
+    protected Animator AnimControl;
 
     protected override void Start()
     {
+        AnimControl = GetComponent<Animator>();
         curHealth = maxHealth;
     }
 
