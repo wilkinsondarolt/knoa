@@ -10,7 +10,7 @@ public class CutsceneScene
     public Sprite CutsceneImage; 
     public float Duration = 1.0f;
 }
-
+	
 public class Cutscene : MonoBehaviour
 {
     private byte CurrentScene;
@@ -26,6 +26,7 @@ public class Cutscene : MonoBehaviour
         imageRenderer = GetComponent<Image>();
         ChangeScene();
     }
+
 
     void ChangeScene()
     {
@@ -45,10 +46,12 @@ public class Cutscene : MonoBehaviour
         else
             Invoke("ChangeScene", sceneToPlay.Duration);
 
-    }
+	    }
 
     void ChangeToNextScene()
+
     {
         Scenes.LoadScene(SceneToLoad.name);
     }
+
 }

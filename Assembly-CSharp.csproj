@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Utils\ProjectileObject.cs" />
      <Compile Include="Assets\Scripts\Utils\Scenes.cs" />
      <Compile Include="Assets\Scripts\Utils\SingletonObject.cs" />
+     <Compile Include="Assets\skipscene.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/gabriel/Documents/GitHub/knoa/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

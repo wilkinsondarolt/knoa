@@ -35,4 +35,6 @@ public class Pause : MonoBehaviour {
 		else if (!Paused)
 			Time.timeScale = 1;
 	}
+
+
 }

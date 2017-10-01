@@ -6,7 +6,7 @@ public class Menu : SingletonObject
 {
     void Update ()
     {
-        if (Input.GetKey(KeyCode.Space)){
+		if (Input.GetKey(KeyCode.Return)){
             Scenes.LoadScene("Prologue");
         }		
 	}
