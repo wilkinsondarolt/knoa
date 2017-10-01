@@ -13,11 +13,12 @@ public class MovingObject : MonoBehaviour
 
     protected virtual void Update()
     {
-        
+       
     }
 
     public IEnumerator MoveTowards(Vector3 destination)
     {
+        transform.position = Vector3.MoveTowards(transform.position, destination, Velocity * Time.deltaTime);
         yield return null;
     }
 

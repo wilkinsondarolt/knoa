@@ -21,7 +21,7 @@ public class LivingObject : MovingObject
 
     protected void TakeDamage(int Damage)
     {
-        Damage -= Damage;
+        curHealth -= Damage;
         CheckIsDead();
     }
 
@@ -31,7 +31,7 @@ public class LivingObject : MovingObject
             OnDie();
     }
 
-    private void OnDie()
+    protected virtual void OnDie()
     {
 
     }

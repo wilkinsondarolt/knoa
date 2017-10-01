@@ -440,7 +440,7 @@ MonoBehaviour:
     Duration: 6
   - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 38c170fbf7ad08e4488bbc6f1ed4eaaf, type: 3}
-    Duration: 2
+    Duration: 1.8
   - Voice: {fileID: 8300000, guid: 5e4e6031ee984424db1b53977ef2e942, type: 3}
     CutsceneImage: {fileID: 21300000, guid: 4a9e97bdad0f295468720d087d9e88f0, type: 3}
     Duration: 10
@@ -457,8 +457,11 @@ MonoBehaviour:
     CutsceneImage: {fileID: 21300000, guid: aa56d476ee3488145ad5daa1daa78fd2, type: 3}
     Duration: 14
   - Voice: {fileID: 8300000, guid: 97aec6e3109e1de4e9a68f1d2b4c6606, type: 3}
+    CutsceneImage: {fileID: 21300000, guid: aa56d476ee3488145ad5daa1daa78fd2, type: 3}
+    Duration: 10
+  - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 0014c7eee95730d419abb6a0804960eb, type: 3}
-    Duration: 14
+    Duration: 4
   SceneToLoad: {fileID: 102900000, guid: a29c3c4e52c7e854e857d0912cf64cd8, type: 3}
 --- !u!82 &1425955036
 AudioSource:
