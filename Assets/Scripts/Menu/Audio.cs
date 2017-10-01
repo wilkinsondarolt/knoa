@@ -18,6 +18,7 @@ public class Audio : MonoBehaviour {
         WaterSource = AddAudioSource(0.1f);
         WindSource = AddAudioSource(0.05f);
 
+        PlayLoop(MusicSource, Audios.InGameMusic);
         PlayLoop(WindSource, Audios.Wind);
         PlayLoop(WaterSource, Audios.Water);
     }
