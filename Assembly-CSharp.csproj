@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Arrow\Arrow.cs" />
+     <Compile Include="Assets\Scripts\Cutscene\Cutscene.cs" />
      <Compile Include="Assets\Scripts\Hud\HUD.cs" />
      <Compile Include="Assets\Scripts\Iara\IaraController.cs" />
      <Compile Include="Assets\Scripts\Iuna\IunaController.cs" />
