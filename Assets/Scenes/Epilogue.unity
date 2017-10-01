@@ -446,7 +446,7 @@ MonoBehaviour:
     Duration: 5
   - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 6df333be1994f124fa8e766ae1a8b450, type: 3}
-    Duration: 5
+    Duration: 8
   - Voice: {fileID: 0}
     CutsceneImage: {fileID: 21300000, guid: 92f2e41f02702b24aa20a7b467287db1, type: 3}
     Duration: 5
